@@ -1,18 +1,32 @@
+:root {
+  --bg-0: #030816;
+  --bg-1: #0a1a38;
+  --text: #eaf4ff;
+}
+
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: radial-gradient(circle at 30% 20%, #22314f 0%, #0e1523 60%, #0a101c 100%);
-  color: #f4f8ff;
-  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% 12%, #20498e 0%, transparent 34%),
+    radial-gradient(circle at 84% 10%, #2b6dbc 0%, transparent 28%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-0));
+  color: var(--text);
+  font-family: Inter, Segoe UI, system-ui, sans-serif;
 }
+
 canvas {
-  width: min(96vw, 1200px);
+  width: min(96vw, 1320px);
   height: auto;
-  border: 1px solid #5c7498;
-  border-radius: 10px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  background: #5ea6e6;
+  border: 1px solid rgba(167, 206, 255, 0.55);
+  border-radius: 18px;
+  box-shadow:
+    0 35px 90px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 0 48px rgba(110, 190, 255, 0.25);
+  background: #62bff8;
 }
